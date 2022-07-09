@@ -131,7 +131,7 @@ body {
 
 @media screen and (min-width:375px) {
     .fp-img > img {
-        margin-bottom: -475px;
+        margin-bottom: -550px;
         position: relative;
         width: 70%;
         margin-left: 110px;
@@ -190,10 +190,9 @@ body {
         font-size: 15pt;
     }
     .fp-img > img {
-        margin-bottom: 0;
-        position: relative;
-        width: 55%;
-        margin-left: 300px;
+        position: absolute;
+        width: 35%;
+        top: 20%;
     }
     .first-page__medsos {
         margin-top: -70px;
