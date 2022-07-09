@@ -11,10 +11,5 @@ li.forEach(el=>{
     });
 });
 
-var typed = new Typed(".auto-type",{
-    strings: ["Siswa SMK", "Konten Kreator"],
-    typeSpeed: 300,
-    backSpeed: 150,
-    loop: true,
-});
+
 
