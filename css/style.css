@@ -242,9 +242,6 @@ figure > .favorite__img > img {
 .certificate > h2 {
     font-size: 15pt;
 }
-details {
-    margin: 0 20%;
-}
 .certificate > details {
     background-image: var(--gradient);
     background-size: 200%;
@@ -404,6 +401,9 @@ main {
     }
     .favorite {
         display: grid;
+    }    
+    details {
+        margin: 0 20%;
     }
 
 }
