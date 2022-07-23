@@ -321,6 +321,48 @@ main {
 .portofolio > p {
     text-align: center;
 }
+.portofolio > p { margin-bottom: 2rem; }
+.portofolio > h3 { margin: 3rem 0 .5rem 0; }
+.web-design {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    height: calc(190px + 1rem);
+    max-width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    overflow-y: auto;
+}
+figure {
+    scroll-snap-align: center;
+}
+.web-design > .web-design__container > figure > img {
+    width: 360px;
+    max-width: none;
+    object-fit: contain;
+}
+.fullstack {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    height: calc(190px + 1rem);
+    max-width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    overflow-y: auto;
+}
+figure {
+    scroll-snap-align: center;
+}
+.fullstack > .fullstack__container > figure > img {
+    width: 360px;
+    max-width: none;
+    object-fit: contain;
+}
 
 
 /* Blog Video */
@@ -359,7 +401,7 @@ main {
 }
 
 @media screen and (min-width:375px) {
-
+    
 }
 
 @media screen and (min-width:425px) {
@@ -405,7 +447,46 @@ main {
     details {
         margin: 0 20%;
     }
-
+    .web-design {
+        display: grid;
+        grid-auto-flow: column;
+        margin: 0 auto;
+        height: calc(250px + 1rem);
+        max-width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        overflow-y: auto;
+    }
+    figure {
+        scroll-snap-align: center;
+    }
+    .web-design > .web-design__container > figure > img {
+        width: 500px;
+        max-width: none;
+        object-fit: contain;
+    }
+    .fullstack {
+        display: grid;
+        grid-auto-flow: column;
+        margin: 0 auto;
+        height: calc(250px + 1rem);
+        max-width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        overflow-y: auto;
+    }
+    figure {
+        scroll-snap-align: center;
+    }
+    .fullstack > .fullstack__container > figure > img {
+        width: 500px;
+        max-width: none;
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -465,5 +546,45 @@ main {
     .accordion {
         max-width: 500px;
         margin: 0 20%;
+    }
+    .web-design {
+        display: grid;
+        grid-auto-flow: column;
+        margin: 0 auto;
+        height: calc(400px + 1rem);
+        max-width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        overflow-y: auto;
+    }
+    figure {
+        scroll-snap-align: center;
+    }
+    .web-design > .web-design__container > figure > img {
+        width: 800px;
+        max-width: none;
+        object-fit: contain;
+    }
+    .fullstack {
+        display: grid;
+        grid-auto-flow: column;
+        margin: 0 auto;
+        height: calc(400px + 1rem);
+        max-width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        overflow-y: auto;
+    }
+    figure {
+        scroll-snap-align: center;
+    }
+    .fullstack > .fullstack__container > figure > img {
+        width: 800px;
+        max-width: none;
+        object-fit: contain;
     }
 }
