@@ -379,12 +379,11 @@ figure {
 .contact {
     position: absolute;
     top: 10%;
-    left: 35%;
-    transform: translate(-35%,10%);
+    left: 50%;
+    transform: translate(-50%,10%);
 }
 .contact > p { 
-    margin-bottom: 1rem; 
-    text-align: center;
+    margin-bottom: 2rem; 
 }
 .contact-logo {
     display: flex;
@@ -393,8 +392,8 @@ figure {
 .contact-logo > a {
     color: var(--pink);
     border: 1px solid var(--white);
-    border-radius: 999px;
-    padding: .4rem .5rem .2rem .5rem;
+    border-radius: 9px;
+    padding: 12px 10px 0 10px;
 }
 .contact-logo > a:hover {
     color: var(--white);
@@ -402,11 +401,12 @@ figure {
     transition: ease-out .5s;
 }
 .contact > form > input,textarea {
-    width: 200%;
+    width: 100%;
     padding: .5rem;
     margin: .5rem 0;
     background-color: transparent;
     color: var(--white);
+    border: 1px solid var(--dark-blue);
 }
 .contact > form > input:focus { outline: 2px solid var(--white); }
 button { 
@@ -415,6 +415,14 @@ button {
     background-color: var(--red);
     color: var(--white);
     margin-bottom: 8rem;
+    border: none;
+}
+button:hover {
+    background-color: var(--white);
+    color: var(--red);
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in .5s;
 }
 
 /* Responsive */
@@ -572,6 +580,19 @@ button {
         left: 25%;
         transform: translate(-20%);
     }
+    .contact {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%,40%);
+    }
+    .contact > form > input,textarea {
+        width: 150%;
+        padding: .5rem;
+        margin: .5rem 0;
+        background-color: transparent;
+        color: var(--white);
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -655,4 +676,44 @@ button {
         object-fit: contain;
     }
     .section-2 > h3 { margin-top: 10rem; font-size: 13pt; }
+    .contact {
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        transform: translate(-35%,10%);
+    }
+    .contact > p { 
+        margin-bottom: 1rem; 
+        text-align: center;
+    }
+    .contact-logo {
+        display: flex;
+        gap: 1rem;
+    }
+    .contact-logo > a {
+        color: var(--pink);
+        border: 1px solid var(--white);
+        border-radius: 999px;
+        padding: .4rem .5rem .2rem .5rem;
+    }
+    .contact-logo > a:hover {
+        color: var(--white);
+        border: 1px solid var(--red);
+        transition: ease-out .5s;
+    }
+    .contact > form > input,textarea {
+        width: 200%;
+        padding: .5rem;
+        margin: .5rem 0;
+        background-color: transparent;
+        color: var(--white);
+    }
+    .contact > form > input:focus { outline: 2px solid var(--white); }
+    button { 
+        width: 100%;
+        padding: .5rem;
+        background-color: var(--red);
+        color: var(--white);
+        margin-bottom: 8rem;
+    }
 }
