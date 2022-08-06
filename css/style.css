@@ -415,6 +415,9 @@ figure {
     border: 1px solid var(--dark-blue);
 }
 .contact > form > input:focus { outline: 2px solid var(--white); }
+.contact > form > textarea {
+    resize: none;
+}
 button { 
     width: 100%;
     padding: .5rem;
